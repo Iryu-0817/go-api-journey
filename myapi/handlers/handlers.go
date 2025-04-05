@@ -6,11 +6,11 @@ import (
 	"net/http"
 )
 
-func helloHandler(w http.ResponseWriter, req *http.Request) {
+func HelloHandler(w http.ResponseWriter, req *http.Request) {
 	io.WriteString(w, "Hello, world!\n")
 }
 
-func postArticleHandler(w http.ResponseWriter, req *http.Request) {
+func PostArticleHandler(w http.ResponseWriter, req *http.Request) {
 	io.WriteString(w, "Posting Article...\n")
 }
 
