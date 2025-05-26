@@ -9,8 +9,10 @@ import (
 )
 
 func main() {
+	// ルーターの作成
 	r := mux.NewRouter()
 
+	// ルーティングの設定
 	r.HandleFunc("/hello", handlers.HelloHandler).Methods(http.MethodGet)
 	r.HandleFunc("/article", handlers.PostArticleHandler).Methods(http.MethodPost)
 	r.HandleFunc("/article/list", handlers.ArticleListHandler).Methods(http.MethodGet)
